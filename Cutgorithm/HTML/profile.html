@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <script src="https://kit.fontawesome.com/c149c7a3bc.js" crossorigin="anonymous"></script>
+    <title>Membership</title>
+</head>
+
+<body>
+    <nav>
+        <header class="logo">
+            <a href="../HTML/Home.html">
+                <h2 class="merci">
+                    CUTGORITHM
+                </h2>
+            </a>
+        </header>
+
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../HTML/Home.html">Home</a></li>
+                    <li><a href="../HTML/Member.html">Join the Cut</a></li>
+                    <li><a href="../HTML/branch.html">Barbershop List</a></li>
+                    <li><a href="../HTML/profile.html">Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner0">
+        <div id="container">
+            <h1>Profile</h1>
+            <img class="profile-pic"
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+                alt="Profile Picture">
+            <div class="info">
+                <p><span>Name:</span> <input class="editable-field" type="text" value="Marcellino" readonly></p>
+                <p><span>Age:</span> <input class="editable-field" type="text" value="20" readonly></p>
+                <p><span>Location:</span> <input class="editable-field" type="text" value="Alam Sutera" readonly></p>
+                <p><span>Occupation:</span> <input class="editable-field" type="text" value="Profesional Dancer"
+                        readonly></p>
+            </div>
+            <div id="edit-button" class="edit-button">
+                <button onclick="toggleEdit()">Edit</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleEdit() {
+            var fields = document.getElementsByClassName("editable-field");
+            var editButton = document.getElementById("edit-button");
+            var buttonText = editButton.getElementsByTagName("button")[0];
+
+            for (var i = 0; i < fields.length; i++) {
+                fields[i].readOnly = !fields[i].readOnly;
+            }
+
+            if (fields[0].readOnly) {
+                buttonText.innerHTML = "Edit";
+            } else {
+                buttonText.innerHTML = "Save";
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="foot">
+            <ul class="socialmedia">
+                <li>
+                    <a href="https://instagram.com/"><i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/">
+                        <i class="fa fa-whatsapp">
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/">
+                        <i class="fa fa-twitter">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+
+            <h2>
+                Copyright &copy; 2023 CUTGORITHM. All rights reserved.
+            </h2>
+        </div>
+
+        <div class="logofoot">
+            <h2>
+                CUTGORITHM
+            </h2>
+        </div>
+    </footer>
+</body>
+
+</html>

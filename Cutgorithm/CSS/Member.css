@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #292929; 
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo .merci{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFyYmVyc2hvcHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.join h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 141px;
+    width: 1213px;
+    background-color: #FFFFFF;
+    color: #292929;
+}
+
+form{
+    margin-top: 150px;
+    margin-left: 25%;
+    width: 650px;
+    height: 620px;
+    background-color: #292929;
+    color: white;
+}
+
+.name{
+    padding-top: 50px;
+    padding-left: 42px;
+}
+
+.name label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.name input{
+    width: 90%;
+    height: 25px;
+    padding-left: 5px;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+.gender{
+    padding-top: 30px;
+    padding-left: 42px;
+}
+
+.gender label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-right: 82px;
+}
+
+.ntl{
+    padding-top: 30px;
+    padding-left: 42px;
+}
+
+.ntl label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-right: 35px;
+}
+
+.email{
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.email label{
+    font: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.email input{
+    width: 90%;
+    height: 25px;
+    background-color: white;
+}
+
+.pass{
+    padding-top: 30px;
+    margin-left: 0;
+}
+
+.pass label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.pass input{
+    width: 90%;
+    height: 25px;
+    background-color: white;
+}
+
+.check{
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.check .agreement {
+    font-size: 10px;
+}
+
+.join{
+    padding-top: 20px;
+    padding-left: 30%;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+/* .join h2{
+    width: 1353.5px;
+} */
+
+.btn1{
+    border: none;
+    padding: 5px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 0 rgb(236, 236, 236);
+    transition: ease-out 0.7s;
+    position: relative;
+    left: 10%;
+    top: 35px;
+}
+
+.btn1:hover{
+    box-shadow: inset 200px 0 0 0 #ffffff;
+    color: #000000;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    background: #292929;
+    color: #FFFFFF;
+}
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socialmedia{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4%;
+}
+.socialmedia li{
+    margin: 0 20px;
+}
+
+.socialmedia a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.socialmedia a i{
+    font-size: 30px;
+    transition: color 0.2s ease-out;
+}
+
+.socialmedia a:hover i{
+    color:#9B9B9B;
+}
+
+.foot h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.logofoot h2{
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 5px;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+}

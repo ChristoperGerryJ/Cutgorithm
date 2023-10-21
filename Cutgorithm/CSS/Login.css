@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1549271568-e87e07c5406b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title .cutgorithm {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: medium;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding-right: 500px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #6B6B6B;
+    border-radius: 3px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #292929;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #292929;
+    transition: ease-out 0.7s;
+}
+
+button:hover {
+    box-shadow: inset 300px 0 0 0 #292929;
+    color: azure;
+    border-style: solid;
+}
+
+.login-button {
+    margin-right: 5%;
+}
+
+.button-group .btn{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #292929;
+    color: #FFFFFF;
+    border: solid;
+    border-radius: 3px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 azure;
+    transition: ease-out 0.7s;
+}
+
+.button-group .btn:hover {
+    box-shadow: inset 0 0 0 2px azure;
+    color: #292929;
+}
+
+
+.button-group .btn .register-button{
+    border: white;
+    padding: 5px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #292929;
+    color: #FFFFFF;
+}
